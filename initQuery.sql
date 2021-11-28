@@ -5,8 +5,7 @@ USE car_ranking;
 CREATE TABLE users (
     id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(30) NOT NULL,
-    pwd VARCHAR(30) NOT NULL,
-    permission ENUM('admin', 'regular')
+    password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE engines (
@@ -24,7 +23,7 @@ CREATE TABLE cars (
     FOREIGN KEY (engine_id) REFERENCES engines(id)
 );
 
-insert into users (username, pwd, permission) values ('admin', 'admin', 'admin');
+insert into users (username, password) values ('admin', 'admin');
 
 insert into engines (horse_pow, capacity, engine_type) values (153, 2.1, 'diesel');
 insert into engines (horse_pow, capacity, engine_type) values (258, 2.5, 'petrol');
