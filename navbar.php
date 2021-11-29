@@ -24,4 +24,4 @@
         <h3>Logged in as: <?php echo $_SESSION['username'] ?></h3>
         <?php
     }
-    ?>
+?>

@@ -38,25 +38,3 @@ header {
 .navbar li a:hover{
     color: whitesmoke;    
 }
-
-.login_container
-{
-  width:30%; 
-  margin:auto; 
-  padding:10px 10px 10px 10px;
-  background-position:center 10px; 
-  background-repeat:no-repeat;
-  background-color: #F0F0F0; 
-}
-
-.login_container form label
-{
-  display:block; 
-  margin-bottom:.25em; 
-}
-
-.login_container form input[type="text"], .login_container input[type="password"], .login_container input[type="submit"]
-{
-  width:100%;
-  margin-bottom:0.5em;
-}
